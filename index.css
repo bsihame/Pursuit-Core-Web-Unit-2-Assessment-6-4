@@ -1,3 +1,42 @@
-body{
+body {
+  width: 70%;
+  position: relative;
   background: lavender;
+  font-family:sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header {
+  background: skyblue;
+  width: 70%;
+  height: 150%;
+  display: flex;
+  flex-wrap: unset;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 10px;
+  position: relative;
+  align-items: center;
+}
+img {
+  
+  height: 150px;
+  position: relative;
+  left: 0;
+}
+#mainArea {
+width: 60%;
+justify-content: left;
+}
+#submit {
+  background-color: skyblue;
+  border: 1px solid gray;
+  border-radius: 7px;
+  height: 25px;
+  font-weight: bold; 
+}
+@media screen and (max-width: 85px) {
+  .header{
+    flex-flow: column;
+  }
 }
