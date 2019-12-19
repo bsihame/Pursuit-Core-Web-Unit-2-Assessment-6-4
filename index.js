@@ -30,5 +30,21 @@ document.addEventListener("DOMContentLoaded", () =>{
       console.log(err)
     }
   }
+  const displayFilmDetails = (title) => {
+    if (!title) {
+      titleMovie.innerText = "";
+      year.innerText= "";
+      description.innerText = "";
+    } else {
+      for(let i=0; i< titles.length; i++){
+        if (tittle === title[i].title){
+          year.innerText = title[i].release_date;
+          description.innerText = title[i].description;
+          titleMovie.innerText = title[i].title;
+        }
+      }
+     
+    }
+  }
   getAllTitles();
 })
