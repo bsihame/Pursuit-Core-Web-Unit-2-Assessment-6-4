@@ -104,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () =>{
         option.innerText = film.title;
         // titleMovie.innerText = film.title
         option.value = film.title
-       
         select.appendChild(option)
       });
       
@@ -112,5 +111,10 @@ document.addEventListener("DOMContentLoaded", () =>{
       console.log(err)
     }
   }
+  select.addEventListener("change", (e) => {
+    //displayFilmDetails(e.target.value)
+    debugger
+  });
+
   getAllTitles();
 })
