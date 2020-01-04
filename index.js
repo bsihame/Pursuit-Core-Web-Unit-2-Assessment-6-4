@@ -18,15 +18,11 @@ document.addEventListener("DOMContentLoaded", () =>{
       let res = await axios.get("https://ghibliapi.herokuapp.com/films");
       data = res.data
       console.log(data)
-      // debugger
       //data is in array so we need to loop
       data.forEach(film => {
         let option = document.createElement('option')
         option.innerText = film.title;
         option.value = film.id;
-        // titleMovie.innerText = film.title
-        // option.value = film.title
-        //debugger
         select.appendChild(option)
       });
       
